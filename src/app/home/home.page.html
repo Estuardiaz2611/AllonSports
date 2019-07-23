@@ -27,15 +27,27 @@
       <p id="p1">*Peliculas, series y documentales de deportes</p>
     </ion-card-content>
   </ion-card>
-  
-  <ion-list lines="none">
-    <ion-item routerLink="/register" style="color: rgb(34, 179, 5)" >
-      <ion-icon slot="start" color="medium" name="person-add"></ion-icon>
-      <ion-label>Registrarse</ion-label>
-    </ion-item>
-    <ion-item routerLink="/login" style="color: rgb(34, 179, 5)">
-      <ion-icon slot="start" color="medium" name="contact" style="color: red" ></ion-icon>
-      <ion-label>Iniciar Sesion</ion-label>
-    </ion-item>
-  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/register">
+          <ion-icon name="person-add"></ion-icon>
+          <ion-label>Registrarse</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/login">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Iniciar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

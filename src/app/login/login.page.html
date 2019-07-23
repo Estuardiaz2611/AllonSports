@@ -1,34 +1,63 @@
-
 <ion-header>
-        <ion-toolbar>
-          <ion-title>
-            Iniciar Sesion
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Iniciar Sesion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-    <ion-card>
-  <ion-img src="/assets/login1.png"></ion-img>
-  <br>
-  <br>
-  <form #loginForm = "ngForm" (ngSubmit)="login()">
-    <ion-item>
+  <ion-card>
+    <ion-img src="/assets/login1.png"></ion-img>
+    <br>
+    <br>
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+      <ion-item>
         <ion-label position="floating">Correo electronico</ion-label>
-        <ion-input name= "email" #email="ngModel" [(ngModel)]="user.email" class="form-control" id="exampleInputEmail1"></ion-input>
-    </ion-item>
+        <ion-input name="email" #email="ngModel" [(ngModel)]="user.email" class="form-control" id="exampleInputEmail1">
+        </ion-input>
+      </ion-item>
 
-    <ion-item>
+      <ion-item>
         <ion-label position="floating">Contraseña</ion-label>
-        <ion-input type="password" name = "password" #password= "ngModel"[(ngModel)]="user.password" class="form-control" id="exampleInputPassword1"></ion-input>
-    </ion-item>
-    <br>
-    <br>
-    <br>
-    <ion-button id="button" color="red" type="submit">
-    <ion-icon name="checkmark-circle"></ion-icon>Iniciar Sesion</ion-button>
-    <ion-button id="button1" color="green" routerLink="/home"> 
-    <ion-icon name="close"></ion-icon>Cancelar</ion-button>
-  </form>
+        <ion-input type="password" name="password" #password="ngModel" [(ngModel)]="user.password" class="form-control"
+          id="exampleInputPassword1"></ion-input>
+      </ion-item>
+      <br>
+      <br>
+      <br>
+      <ion-button id="button" color="red" type="submit">
+        <ion-icon name="checkmark-circle"></ion-icon>Iniciar Sesion
+      </ion-button>
+      <ion-button id="button1" color="green" routerLink="/home">
+        <ion-icon name="close"></ion-icon>Cancelar
+      </ion-button>
+    </form>
+    <ion-button routerLink="/principal">
+        <ion-icon></ion-icon>Iniciar Sesion
+      </ion-button>
   </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/register">
+          <ion-icon name="person-add"></ion-icon>
+          <ion-label>Registrarse</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/login">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Iniciar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

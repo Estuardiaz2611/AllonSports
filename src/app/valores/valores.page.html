@@ -1,31 +1,54 @@
 <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-          <ion-title>
-            Valores
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Valores
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-    <ion-card>
+  <ion-card>
     <ion-img src="/assets/valores.jpeg"></ion-img>
     <h1>Responsabilidad:</h1>
-    <p id="p2">Con el fomento y desarrollo del deporte, 
-            la recreacion, el sano intercambio deportivo,
-            cultural y social de todos los ciudadanos nos 
-            vuelve responsables en alcanzar una meta y nos comprometemos.</p>
+    <p id="p2">Con el fomento y desarrollo del deporte,
+      la recreacion, el sano intercambio deportivo,
+      cultural y social de todos los ciudadanos nos
+      vuelve responsables en alcanzar una meta y nos comprometemos.</p>
     <h1>Integridad:</h1>
-    <p id="p2"> Apego a los principios eticos y morales, a las leyes, 
-            procedimientos, asi como a las reglas y normas que rigen 
-            o han de regir la practica del deporte que vallamos a practicar.</p>
+    <p id="p2"> Apego a los principios eticos y morales, a las leyes,
+      procedimientos, asi como a las reglas y normas que rigen
+      o han de regir la practica del deporte que vallamos a practicar.</p>
     <h1>Calidad:</h1>
-    <p id="p2"> Ofrecer nuestros servicios con la mas alta calidad que merecen 
-            nuestros clientes y usuarios, que son todos los ciudadanos que fomentan
-            o practican deportes, Actividad fisica y la recreacion sana.</p>
+    <p id="p2"> Ofrecer nuestros servicios con la mas alta calidad que merecen
+      nuestros clientes y usuarios, que son todos los ciudadanos que fomentan
+      o practican deportes, Actividad fisica y la recreacion sana.</p>
     <br>
     <ion-img src="/assets/valores2.jpeg"></ion-img>
   </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/principal">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Principal</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

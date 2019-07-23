@@ -1,28 +1,51 @@
 <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-          <ion-title>
-            Mision
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Mision
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-    <ion-card>
+  <ion-card>
     <ion-img src="/assets/mision1.png"></ion-img>
     <ion-card-title>Nosotros</ion-card-title>
     <p id="p2">
-        Te garantizamos la salud fisica y mental del ciudadano deportista,
-        todo lo lograremos mediante el fomento y desarrollo de la practica
-        del deporte, la actividad fisica y la sana recreacion y alimentacion,
-        clases con los mejores instructores y entrenadores especializados en las
-        diversas disciplinas deportivas pues dejaremos a todos nuestros clientes 
-        y usuarios satisfechos a través de los servicios que les vamos a brindar 
-        por medio de nuestra aplicación o en nuestras instalaciones.
+      Te garantizamos la salud fisica y mental del ciudadano deportista,
+      todo lo lograremos mediante el fomento y desarrollo de la practica
+      del deporte, la actividad fisica y la sana recreacion y alimentacion,
+      clases con los mejores instructores y entrenadores especializados en las
+      diversas disciplinas deportivas pues dejaremos a todos nuestros clientes
+      y usuarios satisfechos a través de los servicios que les vamos a brindar
+      por medio de nuestra aplicación o en nuestras instalaciones.
     </p>
     <br>
     <ion-img src="/assets/mision2.jpeg"></ion-img>
   </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/principal">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Principal</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

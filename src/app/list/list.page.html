@@ -15,9 +15,10 @@
     <ion-list-header>
       <ion-label class="label">Tipo de Ejercicio </ion-label>
     </ion-list-header>
-    <ion-card>
       <br>
       <ion-label style="color: rgb(10, 5, 85)">Tu decides que trabajar porfavor elije una opcion</ion-label>
+      <br>
+      <br>
       <br>
       <ion-item routerLink="/abdomen">
         <ion-icon slot="start" color="medium" name="happy"></ion-icon>
@@ -39,14 +40,28 @@
         <ion-icon slot="start" color="medium" name="phone-portrait"></ion-icon>
         <ion-label>Calentamiento</ion-label>
       </ion-item>
-    </ion-card>
   </ion-list>
-
-  <ion-list lines="none">
-    <ion-item routerLink="/principal" style="color: rgb(34, 179, 5)">
-      <ion-icon slot="start" color="medium" name="arrow-round-back"></ion-icon>
-      <ion-label>Regresar</ion-label>
-    </ion-item>
-  </ion-list>
-
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/principal">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Principal</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
