@@ -1,0 +1,34 @@
+
+<ion-header>
+        <ion-toolbar>
+          <ion-title>
+            Iniciar Sesion
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+<ion-content>
+    <ion-card>
+  <ion-img src="/assets/login1.png"></ion-img>
+  <br>
+  <br>
+  <form #loginForm = "ngForm" (ngSubmit)="login()">
+    <ion-item>
+        <ion-label position="floating">Correo electronico</ion-label>
+        <ion-input name= "email" #email="ngModel" [(ngModel)]="user.email" class="form-control" id="exampleInputEmail1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" name = "password" #password= "ngModel"[(ngModel)]="user.password" class="form-control" id="exampleInputPassword1"></ion-input>
+    </ion-item>
+    <br>
+    <br>
+    <br>
+    <ion-button id="button" color="red" type="submit">
+    <ion-icon name="checkmark-circle"></ion-icon>Iniciar Sesion</ion-button>
+    <ion-button id="button1" color="green" routerLink="/home"> 
+    <ion-icon name="close"></ion-icon>Cancelar</ion-button>
+  </form>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/all.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Bienvenidos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p id="p2">
+        Somos la aplicacion donde encontraras todo lo concerniente a tu deporte favorito.
+        somos All On Sport donde el deporte es nuestra especialidad y hacerte sentir bien nuestro compromiso.
+      </p>
+      <br>
+      <p id="p1">Para poder tener acceso a todas nuestras funciones primero debes registrarte o inicar sesion.</p>
+      <br>
+      <p id="p1">*Ventas</p>
+      <p id="p1">*Ejercicios</p>
+      <p id="p1">*Dietas y Consejos</p>
+      <p id="p1">*Resultados De tus Deportes</p>
+      <p id="p1">*Peliculas, series y documentales de deportes</p>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-list lines="none">
+    <ion-item routerLink="/register" style="color: rgb(34, 179, 5)" >
+      <ion-icon slot="start" color="medium" name="person-add"></ion-icon>
+      <ion-label>Registrarse</ion-label>
+    </ion-item>
+    <ion-item routerLink="/login" style="color: rgb(34, 179, 5)">
+      <ion-icon slot="start" color="medium" name="contact" style="color: red" ></ion-icon>
+      <ion-label>Iniciar Sesion</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
