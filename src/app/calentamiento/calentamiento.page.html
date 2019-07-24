@@ -9,6 +9,39 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content style="align-content: center">
+  <br>
+  <ion-label class="label">Principiante</ion-label>
+  <br>
+  <!--video-->
+  <br>
+  <ion-label class="label">Intermedio</ion-label>
+  <br>
+  <!--video-->
+  <br>
+  <ion-label class="label">Experto</ion-label>
+  <br>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/list">
+          <ion-icon name="body"></ion-icon>
+          <ion-label>Ejercicios</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
