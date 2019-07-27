@@ -10,46 +10,40 @@
   <ion-card>
     <ion-img src="/assets/register.jpeg"></ion-img>
     <br>
-    <form #registroForm="ngForm" (ngSubmit)="registrar()">
-      <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="user.nombre" class="form-control"
-          id="nombre"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input type="text" name="Apellido" #Apellido="ngModel" [(ngModel)]="user.apellido" class="form-control"
-          id="apellido"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Nick</ion-label>
-        <ion-input type="text" name="Nick" #nick="ngModel" [(ngModel)]="user.nick" class="form-control" id="nick">
-        </ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Correo electronico</ion-label>
-        <ion-input type="text" name="Email" #email="ngModel" [(ngModel)]="user.email" class="form-control" id="email">
-        </ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Contraseña</ion-label>
-        <ion-input type="password" name="Password" #password="ngModel" [(ngModel)]="user.password" class="form-control"
-          id="password"></ion-input>
-      </ion-item>
-      <br>
-      <br>
-      <br>
-      <ion-button id="button" color="red" type="submit" value="Submit">
-        <ion-icon name="checkmark-circle"></ion-icon>Crear Cuenta
-      </ion-button>
-
-      <ion-button id="button1" color="green" routerLink="/home">
-        <ion-icon name="close"></ion-icon>Cancelar
-      </ion-button>
+    <form #SignUpForm="ngForm" (ngSubmit)="registrar()">
+      <div class="card signup-form">
+        <hr>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="user.nombre" class="form-control"
+              id="nombre" placeholder="Ingrese su nombre" />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" #apellido="ngModel" [(ngModel)]="user.apellido" class="form-control"
+              id="apellido" placeholder="Ingrese su apellido" />
+          </div>
+          <div class="form-group">
+            <label for="nick">Nick</label>
+            <input type="text" name="Nick" #nick="ngModel" [(ngModel)]="user.nick" class="form-control" id="nick"
+              placeholder="Ingrese su nick" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="Email" #email="ngModel" [(ngModel)]="user.email" class="form-control" id="email"
+              placeholder="Ingrese su email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="Password" #password="ngModel" [(ngModel)]="user.password" class="form-control"
+              id="password" placeholder="Ingrese su password" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" value="Submit" class="btn btn-success col-12">Registrar</button>
+        </div>
+      </div>
     </form>
   </ion-card>
 </ion-content>

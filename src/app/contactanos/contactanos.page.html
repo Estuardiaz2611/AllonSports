@@ -1,36 +1,69 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        Contactanos
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  
-  <ion-content>
-  </ion-content>
-  
-  <ion-footer>
-    <ion-toolbar>
-      <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button routerLink="/principal">
-            <ion-icon name="home"></ion-icon>
-            <ion-label>Principal</ion-label>
-          </ion-tab-button>
-  
-          <ion-tab-button routerLink="/perfil">
-            <ion-icon name="person"></ion-icon>
-            <ion-label>Perfil</ion-label>
-          </ion-tab-button>
-  
-          <ion-tab-button routerLink="/home">
-            <ion-icon name="log-out"></ion-icon>
-            <ion-label>Cerrar Sesion</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Contactanos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <br>
+    <ion-row>
+      <ion-img src="/assets/facebookLogo.png" class="ion-img"></ion-img>
+    </ion-row>
+    <ion-label>*Alan Alvarez</ion-label><br>
+    <br>
+    <ion-label>*Denis Villagran</ion-label><br>
+    <br>
+    <ion-label>*Eduardo Urruela</ion-label><br>
+    <br>
+    <ion-item>
+      <ion-label for="idInCE" position="floating">Correo Electronico</ion-label>
+      <ion-input type="text" class="form-control" id="idInCE" placeholder="name@ejmplo.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label for="idInNom" position="floating">Nombre</ion-label>
+      <ion-input type="text" class="form-control" id="idInNom" placeholder="Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label for="idInMen" position="floating">Descripcion</ion-label>
+      <ion-input type="text" class="form-control" id="idInMen" class="row" placeholder="Escribenos... que deseas">
+      </ion-input>
+    </ion-item>
+
+    <ion-button id="idBtnEnviar" color="red" type="submit" value="Submit">
+      <ion-icon name="checkmark-circle"></ion-icon>Enviar
+    </ion-button>
+
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/principal">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Principal</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/home">
+          <ion-icon name="log-out"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>

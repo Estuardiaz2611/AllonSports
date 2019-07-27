@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-perfil',
@@ -7,7 +8,10 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['perfil.page.scss'],
 })
 export class PerfilPage {
+  
+  constructor() {
+    }
 
-  constructor() {}
-
+  ngOnInit() {
+  }
 }

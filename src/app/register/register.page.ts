@@ -21,20 +21,19 @@ export class RegisterPage implements OnInit {
 
   ngOnInit() {
   }
-  registrar() {
+  registrar(){
     this._userService.registro(this.user).subscribe(
-      response => {
-        if (response) {
+      response=>{
+        if(response){
           console.log(response);
           this.status = 'ok';
-          this._router.navigate(['/login'])
-          alert('El usuario ha sido creado Exitosamente')
+          alert('Usuario creado exitosamente')
         }
       },
-      error => {
+      error=>{
         console.log(<any>error)
         this.status = 'error'
-        alert('El usuario ya esta creado');
+        alert('Eror al momento de crear el Usuario')
       }
     )
   }

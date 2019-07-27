@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import axios from 'axios';
 
 @Component({
   selector: 'app-contactanos',
