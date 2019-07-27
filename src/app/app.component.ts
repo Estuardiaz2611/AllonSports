@@ -41,6 +41,11 @@ export class AppComponent {
       url: '/entretenimiento',
       icon: 'ios-desktop'
     },
+    {
+      title: 'Contactanos',
+      url: '/contactanos',
+      icon: 'phone-portrait'
+    },
     
   ];
 

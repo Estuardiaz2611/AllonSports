@@ -80,6 +80,10 @@ const routes: Routes = [
     loadChildren: './entretenimiento/entretenimiento.module#EntretenimientoPageModule'
   },
   {
+    path: 'contactanos',
+    loadChildren: './contactanos/contactanos.module#ContactanosPageModule'
+  },
+  {
     path: 'dietasConsejos',
     loadChildren: './dietasConsejos/dietasConsejos.module#DietasConsejosPageModule'
   },
