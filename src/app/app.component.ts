@@ -14,7 +14,7 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Ventas',
-      url: '/list',
+      url: '/ventas',
       icon: 'card'
     },
 
@@ -26,19 +26,19 @@ export class AppComponent {
 
     {
       title: 'Dietas y Consejos',
-      url: '/list',
+      url: '/dietasConsejos',
       icon: 'restaurant'
     },
     
     {
       title: 'Resultados',
-      url: '/list',
+      url: '/resultados',
       icon: 'ios-stats'
     },
 
     {
       title: 'Entretenimiento',
-      url: '/list',
+      url: '/entretenimiento',
       icon: 'ios-desktop'
     },
     

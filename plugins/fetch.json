@@ -1,0 +1,18 @@
+{
+  "com.moust.cordova.videoplayer": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/moust/cordova-plugin-videoplayer.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-youtube-video-player": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-youtube-video-player"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

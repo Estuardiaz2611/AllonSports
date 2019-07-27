@@ -71,6 +71,22 @@ const routes: Routes = [
     path: 'principal',
     loadChildren: './principal/principal.module#PrincipalPageModule'
   },
+  {
+    path: 'resultados',
+    loadChildren: './resultados/resultados.module#ResultadosPageModule'
+  },
+  {
+    path: 'entretenimiento',
+    loadChildren: './entretenimiento/entretenimiento.module#EntretenimientoPageModule'
+  },
+  {
+    path: 'dietasConsejos',
+    loadChildren: './dietasConsejos/dietasConsejos.module#DietasConsejosPageModule'
+  },
+  {
+    path: 'ventas',
+    loadChildren: './ventas/ventas.module#VentasPageModule'
+  },
 ];
 
 @NgModule({
