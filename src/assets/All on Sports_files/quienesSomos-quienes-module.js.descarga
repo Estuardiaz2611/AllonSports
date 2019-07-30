@@ -1,0 +1,108 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["quienesSomos-quienes-module"],{
+
+/***/ "./src/app/quienesSomos/quienes.module.ts":
+/*!************************************************!*\
+  !*** ./src/app/quienesSomos/quienes.module.ts ***!
+  \************************************************/
+/*! exports provided: QuienesPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuienesPageModule", function() { return QuienesPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _quienes_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./quienes.page */ "./src/app/quienesSomos/quienes.page.ts");
+
+
+
+
+
+
+
+var QuienesPageModule = /** @class */ (function () {
+    function QuienesPageModule() {
+    }
+    QuienesPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _quienes_page__WEBPACK_IMPORTED_MODULE_6__["QuienesPage"]
+                    }
+                ])
+            ],
+            declarations: [_quienes_page__WEBPACK_IMPORTED_MODULE_6__["QuienesPage"]]
+        })
+    ], QuienesPageModule);
+    return QuienesPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/quienesSomos/quienes.page.html":
+/*!************************************************!*\
+  !*** ./src/app/quienesSomos/quienes.page.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button></ion-menu-button>\r\n    </ion-buttons>\r\n    <ion-title>\r\n      Quienes Somos\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-card>\r\n    <ion-img src=\"/assets/informatica.jpg\"></ion-img>\r\n    <ion-card-title>IN6AV</ion-card-title>\r\n    <p id=\"p2\">\r\n      Somos un grupo de jóvenes que estamos trabajando en un proyecto llamado\r\n      \"All_on_Sports\" en este momento estamos cursando el grado de sexto perito\r\n      en informatica y nos hemos visto en la necesidad de crear una aplicacion la cual\r\n      sea para un publico que le guste el deporte o quiera aprender uno a todas aquellas\r\n      personas deportistas, personas que quieren tener un mejor físico y mejorar su salud.\r\n    </p>\r\n    <br>\r\n    <ion-img src=\"/assets/app.jpg\"></ion-img>\r\n  </ion-card>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-tabs>\r\n      <ion-tab-bar slot=\"bottom\">\r\n        <ion-tab-button routerLink=\"/principal\">\r\n          <ion-icon name=\"home\"></ion-icon>\r\n          <ion-label>Principal</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/perfil\">\r\n          <ion-icon name=\"person\"></ion-icon>\r\n          <ion-label>Perfil</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/home\">\r\n          <ion-icon name=\"log-out\"></ion-icon>\r\n          <ion-label>Cerrar Sesion</ion-label>\r\n        </ion-tab-button>\r\n      </ion-tab-bar>\r\n    </ion-tabs>\r\n  </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/quienesSomos/quienes.page.scss":
+/*!************************************************!*\
+  !*** ./src/app/quienesSomos/quienes.page.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ion-title {\n  color: black;\n  font-size: 16px; }\n\nion-content {\n  background-color: black; }\n\n#p2 {\n  text-align: justify;\n  color: black;\n  font-family: sans-serif; }\n\nion-card-title {\n  text-align: center;\n  color: black;\n  font-size: 30px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcXVpZW5lc1NvbW9zL0M6XFxVc2Vyc1xcQ2hhcGFcXERlc2t0b3BcXEFsbG9uU3BvcnRzL3NyY1xcYXBwXFxxdWllbmVzU29tb3NcXHF1aWVuZXMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBWTtFQUNaLGVBQWUsRUFBQTs7QUFHbkI7RUFDSSx1QkFBdUIsRUFBQTs7QUFHM0I7RUFDSSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHVCQUF1QixFQUFBOztBQUV6QjtFQUNFLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osZUFBZSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcXVpZW5lc1NvbW9zL3F1aWVuZXMucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRpdGxle1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG5pb24tY29udGVudHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG4jcDJ7XHJcbiAgICB0ZXh0LWFsaWduOiBqdXN0aWZ5O1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbiAgfVxyXG4gIGlvbi1jYXJkLXRpdGxle1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gIH0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/quienesSomos/quienes.page.ts":
+/*!**********************************************!*\
+  !*** ./src/app/quienesSomos/quienes.page.ts ***!
+  \**********************************************/
+/*! exports provided: QuienesPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuienesPage", function() { return QuienesPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var QuienesPage = /** @class */ (function () {
+    function QuienesPage() {
+    }
+    QuienesPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-quienes',
+            template: __webpack_require__(/*! ./quienes.page.html */ "./src/app/quienesSomos/quienes.page.html"),
+            styles: [__webpack_require__(/*! ./quienes.page.scss */ "./src/app/quienesSomos/quienes.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], QuienesPage);
+    return QuienesPage;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=quienesSomos-quienes-module.js.map

@@ -1,0 +1,134 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["register-register-module"],{
+
+/***/ "./src/app/register/register.module.ts":
+/*!*********************************************!*\
+  !*** ./src/app/register/register.module.ts ***!
+  \*********************************************/
+/*! exports provided: RegisterPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _register_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./register.page */ "./src/app/register/register.page.ts");
+
+
+
+
+
+
+
+var RegisterPageModule = /** @class */ (function () {
+    function RegisterPageModule() {
+    }
+    RegisterPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _register_page__WEBPACK_IMPORTED_MODULE_6__["RegisterPage"]
+                    }
+                ])
+            ],
+            declarations: [_register_page__WEBPACK_IMPORTED_MODULE_6__["RegisterPage"]]
+        })
+    ], RegisterPageModule);
+    return RegisterPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.page.html":
+/*!*********************************************!*\
+  !*** ./src/app/register/register.page.html ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>\r\n      Registrarse\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-card>\r\n    <ion-img src=\"/assets/register.jpeg\"></ion-img>\r\n    <br>\r\n    <form #SignUpForm=\"ngForm\" (ngSubmit)=\"registrar()\">\r\n      <div class=\"card signup-form\">\r\n        <hr>\r\n        <div class=\"card-body\">\r\n          <div class=\"form-group\">\r\n            <label for=\"nombre\">Nombre</label>\r\n            <input type=\"text\" name=\"nombre\" #nombre=\"ngModel\" [(ngModel)]=\"user.nombre\" class=\"form-control\"\r\n              id=\"nombre\" placeholder=\"Ingrese su nombre\" />\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"apellido\">Apellido</label>\r\n            <input type=\"text\" name=\"apellido\" #apellido=\"ngModel\" [(ngModel)]=\"user.apellido\" class=\"form-control\"\r\n              id=\"apellido\" placeholder=\"Ingrese su apellido\" />\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"nick\">Nick</label>\r\n            <input type=\"text\" name=\"Nick\" #nick=\"ngModel\" [(ngModel)]=\"user.nick\" class=\"form-control\" id=\"nick\"\r\n              placeholder=\"Ingrese su nick\" />\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            <input type=\"text\" name=\"Email\" #email=\"ngModel\" [(ngModel)]=\"user.email\" class=\"form-control\" id=\"email\"\r\n              placeholder=\"Ingrese su email\" />\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"password\">Password</label>\r\n            <input type=\"password\" name=\"Password\" #password=\"ngModel\" [(ngModel)]=\"user.password\" class=\"form-control\"\r\n              id=\"password\" placeholder=\"Ingrese su password\" />\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer\">\r\n          <button type=\"submit\" value=\"Submit\" class=\"btn btn-success col-12\">Registrar</button>\r\n        </div>\r\n      </div>\r\n    </form>\r\n  </ion-card>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-tabs>\r\n      <ion-tab-bar slot=\"bottom\">\r\n        <ion-tab-button routerLink=\"/home\">\r\n          <ion-icon name=\"home\"></ion-icon>\r\n          <ion-label>Inicio</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/register\">\r\n          <ion-icon name=\"person-add\"></ion-icon>\r\n          <ion-label>Registrarse</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/login\">\r\n          <ion-icon name=\"contact\"></ion-icon>\r\n          <ion-label>Iniciar Sesion</ion-label>\r\n        </ion-tab-button>\r\n      </ion-tab-bar>\r\n    </ion-tabs>\r\n  </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/register/register.page.scss":
+/*!*********************************************!*\
+  !*** ./src/app/register/register.page.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLnBhZ2Uuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/register/register.page.ts":
+/*!*******************************************!*\
+  !*** ./src/app/register/register.page.ts ***!
+  \*******************************************/
+/*! exports provided: RegisterPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPage", function() { return RegisterPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var src_app_models_user_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/user.model */ "./src/app/models/user.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+var RegisterPage = /** @class */ (function () {
+    function RegisterPage(_userService, _router) {
+        this._userService = _userService;
+        this._router = _router;
+        this.user = new src_app_models_user_model__WEBPACK_IMPORTED_MODULE_3__["User"]("", "", "", "", "", "", "ROL_USUARIO", "");
+    }
+    RegisterPage.prototype.ngOnInit = function () {
+    };
+    RegisterPage.prototype.registrar = function () {
+        var _this = this;
+        this._userService.registro(this.user).subscribe(function (response) {
+            if (response) {
+                console.log(response);
+                _this.status = 'ok';
+                alert('Usuario creado exitosamente');
+            }
+        }, function (error) {
+            console.log(error);
+            _this.status = 'error';
+            alert('Eror al momento de crear el Usuario');
+        });
+    };
+    RegisterPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-register',
+            template: __webpack_require__(/*! ./register.page.html */ "./src/app/register/register.page.html"),
+            providers: [src_app_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"]],
+            styles: [__webpack_require__(/*! ./register.page.scss */ "./src/app/register/register.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+    ], RegisterPage);
+    return RegisterPage;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=register-register-module.js.map

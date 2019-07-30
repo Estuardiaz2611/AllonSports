@@ -1,0 +1,215 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["perfil-perfil-module"],{
+
+/***/ "./src/app/perfil/perfil.module.ts":
+/*!*****************************************!*\
+  !*** ./src/app/perfil/perfil.module.ts ***!
+  \*****************************************/
+/*! exports provided: PerfilPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilPageModule", function() { return PerfilPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _perfil_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./perfil.page */ "./src/app/perfil/perfil.page.ts");
+
+
+
+
+
+
+
+var PerfilPageModule = /** @class */ (function () {
+    function PerfilPageModule() {
+    }
+    PerfilPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _perfil_page__WEBPACK_IMPORTED_MODULE_6__["PerfilPage"]
+                    }
+                ])
+            ],
+            declarations: [_perfil_page__WEBPACK_IMPORTED_MODULE_6__["PerfilPage"]]
+        })
+    ], PerfilPageModule);
+    return PerfilPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/perfil/perfil.page.html":
+/*!*****************************************!*\
+  !*** ./src/app/perfil/perfil.page.html ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n    <ion-toolbar>\r\n        <ion-buttons slot=\"start\">\r\n            <ion-menu-button></ion-menu-button>\r\n        </ion-buttons>\r\n        <ion-title>\r\n            Perfil\r\n        </ion-title>\r\n    </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n    <ion-card>\r\n    <form #editUserForm='ngForm' (ngSubmit)=\"editUser()\">\r\n        <div class=\"card signup-form\">\r\n            <div class=\"card-header\">\r\n                <ion-img src=\"{{ url + 'obtener-imagen-usuario/' + user.image }}\" alt=\"...\" width=\"100\" height=\"200\"\r\n                class=\"card-img-top img-card\" *ngIf=\"user.image\"></ion-img>\r\n                <ion-img src=\"/assets/images/login.png\" alt=\"...\" width=\"100\" height=\"200\"\r\n                class=\"card-img-top img-card\" *ngIf=\"!user.image\"></ion-img>\r\n            </div>\r\n            <div class=\"card-body\">\r\n                <div class=\"form-group\">\r\n                    <label for=\"nombre\">Nombre</label>\r\n                    <input type=\"text\" name=\"nombre\" #nombre=\"ngModel\" [(ngModel)]=\"user.nombre\" class=\"form-control\"\r\n                        id=\"nombre\" placeholder=\"Ingrese su nombre\" />\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"apellido\">Apellido</label>\r\n                    <input type=\"text\" name=\"apellido\" #apellido=\"ngModel\" [(ngModel)]=\"user.apellido\"\r\n                        class=\"form-control\" id=\"apellido\" placeholder=\"Ingrese su apellido\" />\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"nick\">Nick</label>\r\n                    <input type=\"text\" name=\"Nick\" #nick=\"ngModel\" [(ngModel)]=\"user.nick\" class=\"form-control\"\r\n                        id=\"nick\" placeholder=\"Ingrese su nick\" />\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"email\">Email</label>\r\n                    <input type=\"text\" name=\"Email\" #email=\"ngModel\" [(ngModel)]=\"user.email\" class=\"form-control\"\r\n                        id=\"email\" placeholder=\"Ingrese su email\" />\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"image\">Imagen</label><br>\r\n                    <div class=\"input-group mb-3\">\r\n                        <div class=\"input-group-prepend\">\r\n                            <span class=\"input-group-text\" id=\"inputGroupFileAddon01\">Actualizar</span>\r\n                        </div>\r\n                        <div class=\"custom-file\">\r\n                            <input type=\"file\" class=\"custom-file-input\" id=\"inputGroupFile01 image\"\r\n                                aria-describedby=\"inputGroupFileAddon01\" (change)='fileChangeEvent($event)'>\r\n                            <label class=\"custom-file-label\" for=\"inputGroupFile01\">Choose file</label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"card-footer\">\r\n                <button type=\"submit\" class=\"btn btn-success col-12\">Editar</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</ion-card>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n    <ion-toolbar>\r\n        <ion-tabs>\r\n            <ion-tab-bar slot=\"bottom\">\r\n                <ion-tab-button routerLink=\"/principal\">\r\n                    <ion-icon name=\"home\"></ion-icon>\r\n                    <ion-label>Principal</ion-label>\r\n                </ion-tab-button>\r\n\r\n                <ion-tab-button routerLink=\"/perfil\">\r\n                    <ion-icon name=\"person\"></ion-icon>\r\n                    <ion-label>Perfil</ion-label>\r\n                </ion-tab-button>\r\n\r\n                <ion-tab-button routerLink=\"/home\">\r\n                    <ion-icon name=\"log-out\"></ion-icon>\r\n                    <ion-label>Cerrar Sesion</ion-label>\r\n                </ion-tab-button>\r\n            </ion-tab-bar>\r\n        </ion-tabs>\r\n    </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/perfil/perfil.page.scss":
+/*!*****************************************!*\
+  !*** ./src/app/perfil/perfil.page.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "img {\n  width: 100%;\n  height: 50px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGVyZmlsL0M6XFxVc2Vyc1xcQ2hhcGFcXERlc2t0b3BcXEFsbG9uU3BvcnRzL3NyY1xcYXBwXFxwZXJmaWxcXHBlcmZpbC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFXO0VBQ1gsWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGVyZmlsL3BlcmZpbC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpbWd7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNTBweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/perfil/perfil.page.ts":
+/*!***************************************!*\
+  !*** ./src/app/perfil/perfil.page.ts ***!
+  \***************************************/
+/*! exports provided: PerfilPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilPage", function() { return PerfilPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_upload_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/upload.service */ "./src/app/services/upload.service.ts");
+/* harmony import */ var src_app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_global_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/global.service */ "./src/app/services/global.service.ts");
+
+
+
+
+
+
+var PerfilPage = /** @class */ (function () {
+    function PerfilPage(_router, _userService, _uploadService) {
+        this._router = _router;
+        this._userService = _userService;
+        this._uploadService = _uploadService;
+        this.user = this._userService.getidentity();
+        this.identity = this.user;
+        this.token = this._userService.getToken();
+        this.url = src_app_services_global_service__WEBPACK_IMPORTED_MODULE_5__["GLOBAL"].url;
+    }
+    PerfilPage.prototype.ngOnInit = function () {
+    };
+    PerfilPage.prototype.editUser = function () {
+        var _this = this;
+        this._userService.updateUser(this.user).subscribe(function (response) {
+            if (!response.user) {
+                _this.status = 'error';
+            }
+            else {
+                _this.status = 'ok';
+                console.log(response.user);
+                alert('Tus datos han sido actualizados');
+                sessionStorage.setItem('identity', JSON.stringify(_this.user));
+                _this.identity = _this.user;
+                // subir imagen usuario
+                if (_this.filesToUpload) {
+                    _this._uploadService.makeFileRequest(_this.url + 'subir-image-usuario/' + _this.user._id, [], _this.filesToUpload, _this.token, 'image')
+                        .then(function (result) {
+                        _this.user.image = result.user.image;
+                        sessionStorage.setItem('identity', JSON.stringify(_this.user));
+                    });
+                }
+                //  this._router.navigate(['/home'])
+            }
+        }, function (error) {
+            var errorMessage = error;
+            console.log(errorMessage);
+            if (errorMessage != null) {
+                _this.status = 'error';
+                alert('Error al momento de editar tus datos');
+            }
+        });
+    };
+    PerfilPage.prototype.fileChangeEvent = function (fileInput) {
+        this.filesToUpload = fileInput.target.files;
+    };
+    PerfilPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-perfil',
+            template: __webpack_require__(/*! ./perfil.page.html */ "./src/app/perfil/perfil.page.html"),
+            providers: [src_app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"], src_app_services_upload_service__WEBPACK_IMPORTED_MODULE_2__["UploadService"]],
+            styles: [__webpack_require__(/*! ./perfil.page.scss */ "./src/app/perfil/perfil.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
+            src_app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+            src_app_services_upload_service__WEBPACK_IMPORTED_MODULE_2__["UploadService"]])
+    ], PerfilPage);
+    return PerfilPage;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/upload.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/upload.service.ts ***!
+  \********************************************/
+/*! exports provided: UploadService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadService", function() { return UploadService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _global_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./global.service */ "./src/app/services/global.service.ts");
+
+
+
+var UploadService = /** @class */ (function () {
+    function UploadService() {
+        this.url = _global_service__WEBPACK_IMPORTED_MODULE_2__["GLOBAL"].url;
+    }
+    UploadService.prototype.makeFileRequest = function (url, params, files, token, name) {
+        return new Promise(function (resolve, reject) {
+            var formData = new FormData();
+            var xhr = new XMLHttpRequest;
+            for (var i = 0; i < files.length; i++) {
+                formData.append(name, files[i], files[i].name);
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        resolve(JSON.parse(xhr.response));
+                    }
+                    else {
+                        reject(xhr.response);
+                    }
+                }
+            };
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Authorization', token);
+            xhr.send(formData);
+        });
+    };
+    UploadService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], UploadService);
+    return UploadService;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=perfil-perfil-module.js.map

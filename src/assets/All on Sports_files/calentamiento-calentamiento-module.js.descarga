@@ -1,0 +1,108 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["calentamiento-calentamiento-module"],{
+
+/***/ "./src/app/calentamiento/calentamiento.module.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/calentamiento/calentamiento.module.ts ***!
+  \*******************************************************/
+/*! exports provided: CalentamientoPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalentamientoPageModule", function() { return CalentamientoPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _calentamiento_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./calentamiento.page */ "./src/app/calentamiento/calentamiento.page.ts");
+
+
+
+
+
+
+
+var CalentamientoPageModule = /** @class */ (function () {
+    function CalentamientoPageModule() {
+    }
+    CalentamientoPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _calentamiento_page__WEBPACK_IMPORTED_MODULE_6__["CalentamientoPage"]
+                    }
+                ])
+            ],
+            declarations: [_calentamiento_page__WEBPACK_IMPORTED_MODULE_6__["CalentamientoPage"]]
+        })
+    ], CalentamientoPageModule);
+    return CalentamientoPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/calentamiento/calentamiento.page.html":
+/*!*******************************************************!*\
+  !*** ./src/app/calentamiento/calentamiento.page.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button></ion-menu-button>\r\n    </ion-buttons>\r\n    <ion-title>\r\n      Calentamiento\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content style=\"align-content: center\">\r\n  <br>\r\n  <ion-label class=\"label\">Principiante</ion-label>\r\n  <br>\r\n  <!--video-->\r\n  <br>\r\n  <ion-label class=\"label\">Intermedio</ion-label>\r\n  <br>\r\n  <!--video-->\r\n  <br>\r\n  <ion-label class=\"label\">Experto</ion-label>\r\n  <br>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-tabs>\r\n      <ion-tab-bar slot=\"bottom\">\r\n        <ion-tab-button routerLink=\"/principal\">\r\n          <ion-icon name=\"home\"></ion-icon>\r\n          <ion-label>Inicio</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/perfil\">\r\n          <ion-icon name=\"person\"></ion-icon>\r\n          <ion-label>Perfil</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/list\">\r\n          <ion-icon name=\"body\"></ion-icon>\r\n          <ion-label>Ejercicios</ion-label>\r\n        </ion-tab-button>\r\n      </ion-tab-bar>\r\n    </ion-tabs>\r\n  </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/calentamiento/calentamiento.page.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/calentamiento/calentamiento.page.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".label {\n  font-size: 32px;\n  font-family: fantasy;\n  color: black;\n  text-align: center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2FsZW50YW1pZW50by9DOlxcVXNlcnNcXENoYXBhXFxEZXNrdG9wXFxBbGxvblNwb3J0cy9zcmNcXGFwcFxcY2FsZW50YW1pZW50b1xcY2FsZW50YW1pZW50by5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLFlBQVk7RUFDWixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2NhbGVudGFtaWVudG8vY2FsZW50YW1pZW50by5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGFiZWx7XHJcbiAgICBmb250LXNpemU6IDMycHg7XHJcbiAgICBmb250LWZhbWlseTogZmFudGFzeTtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/calentamiento/calentamiento.page.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/calentamiento/calentamiento.page.ts ***!
+  \*****************************************************/
+/*! exports provided: CalentamientoPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalentamientoPage", function() { return CalentamientoPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var CalentamientoPage = /** @class */ (function () {
+    function CalentamientoPage() {
+    }
+    CalentamientoPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-calentamiento',
+            template: __webpack_require__(/*! ./calentamiento.page.html */ "./src/app/calentamiento/calentamiento.page.html"),
+            styles: [__webpack_require__(/*! ./calentamiento.page.scss */ "./src/app/calentamiento/calentamiento.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], CalentamientoPage);
+    return CalentamientoPage;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=calentamiento-calentamiento-module.js.map

@@ -1,0 +1,108 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["brazo-brazo-module"],{
+
+/***/ "./src/app/brazo/brazo.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/brazo/brazo.module.ts ***!
+  \***************************************/
+/*! exports provided: BrazoPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrazoPageModule", function() { return BrazoPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _brazo_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./brazo.page */ "./src/app/brazo/brazo.page.ts");
+
+
+
+
+
+
+
+var BrazoPageModule = /** @class */ (function () {
+    function BrazoPageModule() {
+    }
+    BrazoPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _brazo_page__WEBPACK_IMPORTED_MODULE_6__["BrazoPage"]
+                    }
+                ])
+            ],
+            declarations: [_brazo_page__WEBPACK_IMPORTED_MODULE_6__["BrazoPage"]]
+        })
+    ], BrazoPageModule);
+    return BrazoPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/brazo/brazo.page.html":
+/*!***************************************!*\
+  !*** ./src/app/brazo/brazo.page.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button></ion-menu-button>\r\n    </ion-buttons>\r\n    <ion-title>\r\n      Brazo\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content style=\"align-content: center\">\r\n  <br>\r\n  <ion-label class=\"label\">Principiante</ion-label>\r\n  <br>\r\n  <!--video-->\r\n  <br>\r\n  <ion-label class=\"label\">Intermedio</ion-label>\r\n  <br>\r\n  <!--video-->\r\n  <br>\r\n  <ion-label class=\"label\">Experto</ion-label>\r\n  <br>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-tabs>\r\n      <ion-tab-bar slot=\"bottom\">\r\n        <ion-tab-button routerLink=\"/principal\">\r\n          <ion-icon name=\"home\"></ion-icon>\r\n          <ion-label>Inicio</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/perfil\">\r\n          <ion-icon name=\"person\"></ion-icon>\r\n          <ion-label>Perfil</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/list\">\r\n          <ion-icon name=\"body\"></ion-icon>\r\n          <ion-label>Ejercicios</ion-label>\r\n        </ion-tab-button>\r\n      </ion-tab-bar>\r\n    </ion-tabs>\r\n  </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/brazo/brazo.page.scss":
+/*!***************************************!*\
+  !*** ./src/app/brazo/brazo.page.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".label {\n  font-size: 32px;\n  font-family: fantasy;\n  color: black;\n  text-align: center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYnJhem8vQzpcXFVzZXJzXFxDaGFwYVxcRGVza3RvcFxcQWxsb25TcG9ydHMvc3JjXFxhcHBcXGJyYXpvXFxicmF6by5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLFlBQVk7RUFDWixrQkFBa0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2JyYXpvL2JyYXpvLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sYWJlbHtcclxuICAgIGZvbnQtc2l6ZTogMzJweDtcclxuICAgIGZvbnQtZmFtaWx5OiBmYW50YXN5O1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/brazo/brazo.page.ts":
+/*!*************************************!*\
+  !*** ./src/app/brazo/brazo.page.ts ***!
+  \*************************************/
+/*! exports provided: BrazoPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrazoPage", function() { return BrazoPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BrazoPage = /** @class */ (function () {
+    function BrazoPage() {
+    }
+    BrazoPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-brazo',
+            template: __webpack_require__(/*! ./brazo.page.html */ "./src/app/brazo/brazo.page.html"),
+            styles: [__webpack_require__(/*! ./brazo.page.scss */ "./src/app/brazo/brazo.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BrazoPage);
+    return BrazoPage;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=brazo-brazo-module.js.map

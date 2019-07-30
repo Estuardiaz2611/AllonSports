@@ -9,41 +9,50 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
-  <ion-card>
-    <br>
-    <ion-row>
-      <ion-img src="/assets/facebookLogo.png" class="ion-img"></ion-img>
-    </ion-row>
-    <ion-label>*Alan Alvarez</ion-label><br>
-    <br>
-    <ion-label>*Denis Villagran</ion-label><br>
-    <br>
-    <ion-label>*Eduardo Urruela</ion-label><br>
-    <br>
-    <ion-item>
-      <ion-label for="idInCE" position="floating">Correo Electronico</ion-label>
-      <ion-input type="text" class="form-control" id="idInCE" placeholder="name@ejmplo.com"></ion-input>
-    </ion-item>
 
-    <ion-item>
-      <ion-label for="idInNom" position="floating">Nombre</ion-label>
-      <ion-input type="text" class="form-control" id="idInNom" placeholder="Nombre"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label for="idInMen" position="floating">Descripcion</ion-label>
-      <ion-input type="text" class="form-control" id="idInMen" class="row" placeholder="Escribenos... que deseas">
-      </ion-input>
-    </ion-item>
-
-    <ion-button id="idBtnEnviar" color="red" type="submit" value="Submit">
-      <ion-icon name="checkmark-circle"></ion-icon>Enviar
-    </ion-button>
-
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/contactanos.png"></ion-img>
   </ion-card>
 
+  <!--Alan-->
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button class="hola">A</ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://twitter.com/estuardiaz">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.facebook.com/estuardo.diaz.581730">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://www.instagram.com/soes_2611/?hl=es-la">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <!--Eduardo-->
+  <ion-fab vertical="center" horizontal="start" slot="fixed">
+    <ion-fab-button class="hola">E</ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://twitter.com/estuardiaz">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.facebook.com/eduardo.villatoro.142">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button href="https://www.instagram.com/soes_2611/?hl=es-la">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
 
 <ion-footer>

@@ -10,7 +10,56 @@
 </ion-header>
 
 <ion-content>
-
+    <ion-card>
+    <form #editUserForm='ngForm' (ngSubmit)="editUser()">
+        <div class="card signup-form">
+            <div class="card-header">
+                <ion-img src="{{ url + 'obtener-imagen-usuario/' + user.image }}" alt="..." width="100" height="200"
+                class="card-img-top img-card" *ngIf="user.image"></ion-img>
+                <ion-img src="/assets/images/login.png" alt="..." width="100" height="200"
+                class="card-img-top img-card" *ngIf="!user.image"></ion-img>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="user.nombre" class="form-control"
+                        id="nombre" placeholder="Ingrese su nombre" />
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" #apellido="ngModel" [(ngModel)]="user.apellido"
+                        class="form-control" id="apellido" placeholder="Ingrese su apellido" />
+                </div>
+                <div class="form-group">
+                    <label for="nick">Nick</label>
+                    <input type="text" name="Nick" #nick="ngModel" [(ngModel)]="user.nick" class="form-control"
+                        id="nick" placeholder="Ingrese su nick" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="Email" #email="ngModel" [(ngModel)]="user.email" class="form-control"
+                        id="email" placeholder="Ingrese su email" />
+                </div>
+                <div class="form-group">
+                    <label for="image">Imagen</label><br>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Actualizar</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01 image"
+                                aria-describedby="inputGroupFileAddon01" (change)='fileChangeEvent($event)'>
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success col-12">Editar</button>
+            </div>
+        </div>
+    </form>
+</ion-card>
 </ion-content>
 
 <ion-footer>

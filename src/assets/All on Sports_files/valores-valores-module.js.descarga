@@ -1,0 +1,108 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["valores-valores-module"],{
+
+/***/ "./src/app/valores/valores.module.ts":
+/*!*******************************************!*\
+  !*** ./src/app/valores/valores.module.ts ***!
+  \*******************************************/
+/*! exports provided: ValoresPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValoresPageModule", function() { return ValoresPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _valores_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./valores.page */ "./src/app/valores/valores.page.ts");
+
+
+
+
+
+
+
+var ValoresPageModule = /** @class */ (function () {
+    function ValoresPageModule() {
+    }
+    ValoresPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild([
+                    {
+                        path: '',
+                        component: _valores_page__WEBPACK_IMPORTED_MODULE_6__["ValoresPage"]
+                    }
+                ])
+            ],
+            declarations: [_valores_page__WEBPACK_IMPORTED_MODULE_6__["ValoresPage"]]
+        })
+    ], ValoresPageModule);
+    return ValoresPageModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/valores/valores.page.html":
+/*!*******************************************!*\
+  !*** ./src/app/valores/valores.page.html ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button></ion-menu-button>\r\n    </ion-buttons>\r\n    <ion-title>\r\n      Valores\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-card>\r\n    <ion-img src=\"/assets/valores.jpeg\"></ion-img>\r\n    <h1>Responsabilidad:</h1>\r\n    <p id=\"p2\">Con el fomento y desarrollo del deporte,\r\n      la recreacion, el sano intercambio deportivo,\r\n      cultural y social de todos los ciudadanos nos\r\n      vuelve responsables en alcanzar una meta y nos comprometemos.</p>\r\n    <h1>Integridad:</h1>\r\n    <p id=\"p2\"> Apego a los principios eticos y morales, a las leyes,\r\n      procedimientos, asi como a las reglas y normas que rigen\r\n      o han de regir la practica del deporte que vallamos a practicar.</p>\r\n    <h1>Calidad:</h1>\r\n    <p id=\"p2\"> Ofrecer nuestros servicios con la mas alta calidad que merecen\r\n      nuestros clientes y usuarios, que son todos los ciudadanos que fomentan\r\n      o practican deportes, Actividad fisica y la recreacion sana.</p>\r\n    <br>\r\n    <ion-img src=\"/assets/valores2.jpeg\"></ion-img>\r\n  </ion-card>\r\n</ion-content>\r\n\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-tabs>\r\n      <ion-tab-bar slot=\"bottom\">\r\n        <ion-tab-button routerLink=\"/principal\">\r\n          <ion-icon name=\"home\"></ion-icon>\r\n          <ion-label>Principal</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/perfil\">\r\n          <ion-icon name=\"person\"></ion-icon>\r\n          <ion-label>Perfil</ion-label>\r\n        </ion-tab-button>\r\n\r\n        <ion-tab-button routerLink=\"/home\">\r\n          <ion-icon name=\"log-out\"></ion-icon>\r\n          <ion-label>Cerrar Sesion</ion-label>\r\n        </ion-tab-button>\r\n      </ion-tab-bar>\r\n    </ion-tabs>\r\n  </ion-toolbar>\r\n</ion-footer>"
+
+/***/ }),
+
+/***/ "./src/app/valores/valores.page.scss":
+/*!*******************************************!*\
+  !*** ./src/app/valores/valores.page.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ion-title {\n  color: black;\n  font-size: 16px; }\n\nion-content {\n  background-color: black; }\n\n#p2 {\n  text-align: justify;\n  color: black;\n  font-family: sans-serif; }\n\nion-card-title {\n  text-align: center;\n  color: black;\n  font-size: 30px; }\n\nh1 {\n  color: red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmFsb3Jlcy9DOlxcVXNlcnNcXENoYXBhXFxEZXNrdG9wXFxBbGxvblNwb3J0cy9zcmNcXGFwcFxcdmFsb3Jlc1xcdmFsb3Jlcy5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFZO0VBQ1osZUFBZSxFQUFBOztBQUduQjtFQUNJLHVCQUF1QixFQUFBOztBQUczQjtFQUNJLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osdUJBQXVCLEVBQUE7O0FBRXpCO0VBQ0Usa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixlQUFlLEVBQUE7O0FBRWpCO0VBQ0UsVUFBVSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvdmFsb3Jlcy92YWxvcmVzLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi10aXRsZXtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5cclxuaW9uLWNvbnRlbnR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxufVxyXG5cclxuI3Aye1xyXG4gICAgdGV4dC1hbGlnbjoganVzdGlmeTtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG4gIH1cclxuICBpb24tY2FyZC10aXRsZXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICB9XHJcbiAgaDF7XHJcbiAgICBjb2xvcjogcmVkO1xyXG4gIH0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/valores/valores.page.ts":
+/*!*****************************************!*\
+  !*** ./src/app/valores/valores.page.ts ***!
+  \*****************************************/
+/*! exports provided: ValoresPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValoresPage", function() { return ValoresPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ValoresPage = /** @class */ (function () {
+    function ValoresPage() {
+    }
+    ValoresPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-valores',
+            template: __webpack_require__(/*! ./valores.page.html */ "./src/app/valores/valores.page.html"),
+            styles: [__webpack_require__(/*! ./valores.page.scss */ "./src/app/valores/valores.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ValoresPage);
+    return ValoresPage;
+}());
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=valores-valores-module.js.map
