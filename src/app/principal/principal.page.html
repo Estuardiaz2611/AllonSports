@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -17,26 +17,36 @@
     <ion-list-header>
       <ion-label>Informacion</ion-label>
     </ion-list-header>
+    <ion-card color="danger">
     <ion-item routerLink="/quienes">
-      <ion-icon slot="start" color="medium" name="happy"></ion-icon>
-      <ion-label>Quiénes Somos</ion-label>
+      <ion-icon color="danger" slot="start" name="happy"></ion-icon>
+      <ion-label class="aa">Quiénes Somos</ion-label>
     </ion-item>
+  </ion-card>
+  <ion-card color="danger">
     <ion-item routerLink="/vision">
-      <ion-icon slot="start" color="medium" name="hand"></ion-icon>
-      <ion-label>Vision</ion-label>
+      <ion-icon color="danger" slot="start" name="hand"></ion-icon>
+      <ion-label class="aa">Vision</ion-label>
     </ion-item>
+  </ion-card>
+  <ion-card color="danger">
     <ion-item routerLink="/mision">
-      <ion-icon slot="start" color="medium" name="hammer"></ion-icon>
-      <ion-label>Mision</ion-label>
+      <ion-icon color="danger" slot="start" name="hammer"></ion-icon>
+      <ion-label class="aa">Mision</ion-label>
     </ion-item>
+  </ion-card>
+  <ion-card color="danger">
     <ion-item routerLink="/valores">
-      <ion-icon slot="start" color="medium" name="heart"></ion-icon>
-      <ion-label>Valores</ion-label>
+      <ion-icon color="danger" slot="start" name="heart"></ion-icon>
+      <ion-label class="aa">Valores</ion-label>
     </ion-item>
+  </ion-card>
+  <ion-card color="danger">
     <ion-item routerLink="/aplicacion">
-      <ion-icon slot="start" color="medium" name="phone-portrait"></ion-icon>
-      <ion-label>Aplicacion</ion-label>
+      <ion-icon color="danger" slot="start" name="phone-portrait"></ion-icon>
+      <ion-label class="aa">Aplicacion</ion-label>
     </ion-item>
+  </ion-card>
   </ion-list>
 </ion-content>
 
@@ -46,18 +56,18 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button routerLink="/principal">
-          <ion-icon name="home"></ion-icon>
-          <ion-label>Principal</ion-label>
+          <ion-icon color="danger" name="home"></ion-icon>
+          <ion-label color="danger">Principal</ion-label>
         </ion-tab-button>
 
         <ion-tab-button routerLink="/perfil">
-          <ion-icon name="person"></ion-icon>
-          <ion-label>Perfil</ion-label>
+          <ion-icon color="danger" name="person"></ion-icon>
+          <ion-label color="danger">Perfil</ion-label>
         </ion-tab-button>
 
         <ion-tab-button routerLink="/home">
-          <ion-icon name="log-out"></ion-icon>
-          <ion-label>Cerrar Sesion</ion-label>
+          <ion-icon color="danger" name="log-out"></ion-icon>
+          <ion-label color="danger" >Cerrar Sesion</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
