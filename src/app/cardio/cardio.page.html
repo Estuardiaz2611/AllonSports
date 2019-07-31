@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="light">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -10,17 +10,31 @@
 </ion-header>
 
 <ion-content style="align-content: center">
-  <br>
-  <ion-label class="label">Principiante</ion-label>
-  <br>
-  <!--video-->
-  <br>
-  <ion-label class="label">Intermedio</ion-label>
-  <br>
-  <!--video-->
-  <br>
-  <ion-label class="label">Experto</ion-label>
-  <br>
+  <ion-card>
+    <ion-title class="title">Principiante</ion-title>
+    <br>
+   <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wKBYBuqJlk8" allowfullscreen></iframe>
+</div>
+    <!--video-->
+  </ion-card>
+  <ion-card>
+    <br>
+    <ion-title class="title">Intermedio</ion-title>
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y-f7rI9oviY" allowfullscreen></iframe>
+    </div>
+    <!--video-->
+  </ion-card>
+  <ion-card>
+    <br>
+    <ion-title class="title">Avanzado</ion-title>
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cWnxQJTm40E" allowfullscreen></iframe>
+    </div>
+  </ion-card>
 </ion-content>
 
 <ion-footer>
