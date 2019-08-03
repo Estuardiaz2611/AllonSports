@@ -91,6 +91,18 @@ const routes: Routes = [
     path: 'ventas',
     loadChildren: './ventas/ventas.module#VentasPageModule'
   },
+  {
+    path: 'peliculas',
+    loadChildren: './peliculas/peliculas.module#PeliculasPageModule'
+  },
+  {
+    path: 'series',
+    loadChildren: './series/series.module#SeriesPageModule'
+  },
+  {
+    path: 'documentales',
+    loadChildren: './documentales/documentales.module#DocumentalesPageModule'
+  },
 ];
 
 @NgModule({
