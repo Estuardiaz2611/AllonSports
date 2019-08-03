@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="secondary">
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
@@ -11,6 +11,30 @@
   
   
   <ion-content>
+      <ion-list lines="none">
+          <br>
+          <br>
+          <ion-card>
+            <ion-item routerLink="/abdomen">
+              <ion-icon style="zoom:2.0;" slot="end" color="secondary" name="film"></ion-icon>
+              <ion-label class="aa">Peliculas</ion-label>
+            </ion-item>
+          </ion-card>
+          <br>
+          <ion-card>
+            <ion-item routerLink="/pierna">
+              <ion-icon style="zoom:2.0;" slot="end" color="secondary" name="easel"></ion-icon>
+              <ion-label class="aa">Series</ion-label>
+            </ion-item>
+          </ion-card>
+          <br>
+          <ion-card>
+            <ion-item routerLink="/brazo">
+              <ion-icon style="zoom:2.0;" slot="end" color="secondary" name="book"></ion-icon>
+              <ion-label class="aa">Documentales</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-list>
   </ion-content>
   
   <ion-footer>
@@ -18,18 +42,18 @@
       <ion-tabs>
         <ion-tab-bar slot="bottom">
           <ion-tab-button routerLink="/principal">
-            <ion-icon name="home"></ion-icon>
-            <ion-label>Principal</ion-label>
+            <ion-icon color="secondary" name="home"></ion-icon>
+            <ion-label color="secondary">Principal</ion-label>
           </ion-tab-button>
   
           <ion-tab-button routerLink="/perfil">
-            <ion-icon name="person"></ion-icon>
-            <ion-label>Perfil</ion-label>
+            <ion-icon color="secondary" name="person"></ion-icon>
+            <ion-label color="secondary" >Perfil</ion-label>
           </ion-tab-button>
   
           <ion-tab-button routerLink="/home">
-            <ion-icon name="log-out"></ion-icon>
-            <ion-label>Cerrar Sesion</ion-label>
+            <ion-icon color="secondary" name="log-out"></ion-icon>
+            <ion-label color="secondary">Cerrar Sesion</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
