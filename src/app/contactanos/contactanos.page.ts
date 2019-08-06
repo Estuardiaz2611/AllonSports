@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import axios from 'axios';
 
 @Component({
   selector: 'app-contactanos',
@@ -9,6 +7,7 @@ import axios from 'axios';
 })
 export class ContactanosPage {
 
-  constructor() {}
+  constructor() {
 
+  }
 }
