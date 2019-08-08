@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-principal',
@@ -8,6 +9,16 @@ import { ModalController } from '@ionic/angular';
 })
 export class PrincipalPage {
 
-  constructor() {}
+  constructor( public alertController: AlertController, ) {}
+
+  async Cierre() {
+    const alert = await this.alertController.create({
+      header: 'Nos vemos pronto',
+      message: 'Cierre de sesion con exito.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
 
 }

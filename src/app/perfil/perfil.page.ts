@@ -4,7 +4,7 @@ import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/app/models/user.model';
 import { Router } from '@angular/router';
 import { GLOBAL } from 'src/app/services/global.service';
-
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-perfil',
@@ -23,7 +23,9 @@ export class PerfilPage implements OnInit {
   constructor(
     private _router: Router,
     private _userService: UserService,
-    private _uploadService: UploadService
+    private _uploadService: UploadService,
+    public alertController: AlertController,
+
   ) {
     this.user = this._userService.getidentity();
     this.identity = this.user;
@@ -70,4 +72,15 @@ export class PerfilPage implements OnInit {
   fileChangeEvent(fileInput: any) {
     this.filesToUpload = <Array<File>>fileInput.target.files;
   }
+
+  async Cierre() {
+    const alert = await this.alertController.create({
+      header: 'Nos vemos pronto',
+      message: 'Cierre de sesion con exito.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
 }

@@ -3,7 +3,7 @@ import { User } from 'src/app/models/user.model';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { ModalController } from '@ionic/angular';
-
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -20,6 +20,7 @@ export class LoginPage implements OnInit {
   constructor(
     private _router: Router,
     private _userService: UserService,
+    public alertController: AlertController,
   ) {
 
     this.user = new User("", "", "", "", "", "", "", "");
@@ -63,7 +64,6 @@ export class LoginPage implements OnInit {
           this.getToken();
           this.status = 'ok';
           this._router.navigate(['/principal'])
-          alert('Inicio de sesion exitoso')
         }
       },
       error => {
@@ -71,9 +71,29 @@ export class LoginPage implements OnInit {
         console.log(errorMessage);
         if (errorMessage != null) {
           this.status = 'error'
-          alert('Usuario o contraseña incorrectos')
         }
       }
     )
   }
+  async Alert() {
+    const alert = await this.alertController.create({
+      header: 'Bienvenido',
+      message: 'Inicio de sesion exitoso.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  async ErrorAlert() {
+    const alert = await this.alertController.create({
+      header: 'Error',
+      subHeader: 'Sesion',
+      message: 'Usuario o contraseña incorrectos.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
 }
