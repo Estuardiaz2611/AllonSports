@@ -88,10 +88,6 @@ const routes: Routes = [
     loadChildren: './dietasConsejos/dietasConsejos.module#DietasConsejosPageModule'
   },
   {
-    path: 'ventas',
-    loadChildren: './ventas/ventas.module#VentasPageModule'
-  },
-  {
     path: 'peliculas',
     loadChildren: './peliculas/peliculas.module#PeliculasPageModule'
   },
@@ -102,6 +98,22 @@ const routes: Routes = [
   {
     path: 'documentales',
     loadChildren: './documentales/documentales.module#DocumentalesPageModule'
+  },
+  {
+    path: 'dietaDos',
+    loadChildren: './dietaDos/dietaDos.module#DietaDosPageModule'
+  },
+  {
+    path: 'dietaTres',
+    loadChildren: './dietaTres/dietaTres.module#DietaTresPageModule'
+  },
+  {
+    path: 'dietaCuatro',
+    loadChildren: './dietaCuatro/dietaCuatro.module#DietaCuatroPageModule'
+  },
+  {
+    path: 'dietaCinco',
+    loadChildren: './dietaCinco/dietaCinco.module#DietaCincoPageModule'
   },
 ];
 

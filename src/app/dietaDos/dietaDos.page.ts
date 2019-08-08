@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-ventas',
-  templateUrl: 'ventas.page.html',
-  styleUrls: ['ventas.page.scss'],
+  selector: 'app-dietaDos',
+  templateUrl: 'dietaDos.page.html',
+  styleUrls: ['dietaDos.page.scss'],
 })
-export class VentasPage {
+export class DietaDosPage {
 
   constructor() {}
 

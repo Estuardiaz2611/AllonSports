@@ -122,31 +122,3 @@
     </ion-tabs>
   </ion-toolbar>
 </ion-footer>
-<!-- MODAL AGREGAR RESULTADO -->
-<div class="modal fade" id="modalAddResultados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <form #formAddResultados="ngForm" (ngSubmit)="addResultados()">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Agregando publicación de Resultado...</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="getResultados()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="descripcion">Descripción de Resultado</label>
-            <input type="text" name="descripcion" #descripcion="ngModel" [(ngModel)]="modelResultado.descripcion"
-              class="form-control" placeholder="Ingrese la descripción">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-warning col-4" data-dismiss="modal"
-            (click)="getResultadosLeagues()">Close</button>
-          <button type="submit" class="btn btn-outline-success col-4">Save changes</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
