@@ -19,7 +19,7 @@ export class AppComponent {
     },
 
     {
-      title: 'Dietas y Consejos',
+      title: 'Dietas',
       url: '/dietasConsejos',
       icon: 'restaurant'
     },
