@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/app/models/user.model';
-import { alertController } from '@ionic/core';
+import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,20 +14,20 @@ import { Router } from '@angular/router';
 export class RegisterPage implements OnInit {
   public user: User;
   public status;
-  constructor(private _userService: UserService, private _router: Router, ) {
+  constructor(private _userService: UserService, private _router: Router, public alertController: AlertController, ) {
 
     this.user = new User("", "", "", "", "", "", "ROL_USUARIO", "")
   }
 
   ngOnInit() {
   }
-  registrar(){
+  registrar(){  
     this._userService.registro(this.user).subscribe(
       response=>{
         if(response){
           console.log(response);
           this.status = 'ok';
-          alert('Usuario creado exitosamente')
+          this._router.navigate(['/login'])
         }
       },
       error=>{
@@ -37,4 +37,15 @@ export class RegisterPage implements OnInit {
       }
     )
   }
+
+  async Alert() {
+    const alert = await this.alertController.create({
+      header: 'Registro',
+      message: 'El usuario ha sido creado con Exito.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
 }

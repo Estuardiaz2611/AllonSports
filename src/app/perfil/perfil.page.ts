@@ -44,7 +44,6 @@ export class PerfilPage implements OnInit {
         } else {
           this.status = 'ok'
           console.log(response.user);
-          alert('Tus datos han sido actualizados');
           sessionStorage.setItem('identity', JSON.stringify(this.user));
           this.identity = this.user;
           // subir imagen usuario
@@ -77,6 +76,16 @@ export class PerfilPage implements OnInit {
     const alert = await this.alertController.create({
       header: 'Nos vemos pronto',
       message: 'Cierre de sesion con exito.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  async Alert() {
+    const alert = await this.alertController.create({
+      header: 'Perfil',
+      message: 'Tus datos han sido Actualizados con exito.',
       buttons: ['OK']
     });
 
